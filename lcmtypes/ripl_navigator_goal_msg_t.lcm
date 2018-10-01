@@ -1,0 +1,27 @@
+package ripl;
+
+struct navigator_goal_msg_t
+{
+	int64_t utime;
+
+	point_t goal; //the actual desired goal in world coordinates
+	
+	double velocity; //nominal desired speed
+	
+	int64_t yaw_direction; //Who knows?
+
+	boolean use_theta;
+	int8_t sender;      //should be one of the SENDER_* below indicating which process is publishing
+    int32_t nonce; 		//Change whenever the goal changes
+	
+	//valid senders
+	const int8_t	 SENDER_YOUR_MOM	 	=-1;
+	const int8_t	 SENDER_WAYPOINT_TOOL 	=1;
+	const int8_t	 SENDER_VIEWER		  	=2;
+	const int8_t	 SENDER_NAVIGATOR	  	=3;
+	const int8_t	 SENDER_MISSION_PLANNER =4;
+	const int8_t	 SENDER_USAR =5;
+	const int8_t	 SENDER_MAX_VALID 		=6;
+	const int8_t	 SENDER_MOVIE_MISSION   =7;
+	
+}

@@ -1,0 +1,9 @@
+package ripl;
+
+struct navigator_status_t
+{
+    int64_t  utime;
+    int32_t goal_reached;    
+    double goal_x;
+    double goal_y;
+}

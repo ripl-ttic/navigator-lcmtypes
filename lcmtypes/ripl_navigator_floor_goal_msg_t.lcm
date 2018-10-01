@@ -1,0 +1,7 @@
+package ripl;
+
+struct navigator_floor_goal_msg_t
+{
+	navigator_goal_msg_t goal_msg;
+	int32_t floor_no;	
+}
