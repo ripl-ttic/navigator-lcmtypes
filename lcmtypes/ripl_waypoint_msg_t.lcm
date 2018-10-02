@@ -1,0 +1,39 @@
+package ripl;
+
+struct waypoint_msg_t
+{
+
+    int64_t utime;
+
+    navigator_point_t pos;
+    navigator_point_t vel;
+    int8_t waypt_type;
+    int8_t sender;
+    int32_t nonce;
+
+
+    //valid waypt_types, all greater than 0
+    const int8_t TYPE_WAYPT         = 1;
+    const int8_t TYPE_LAND          = 2;
+    const int8_t TYPE_TAKEOFF       = 3;
+    const int8_t TYPE_RELATIVE      = 4;
+    const int8_t TYPE_STOP          = 5;
+    const int8_t TYPE_BODY_RELATIVE = 6;
+    const int8_t TYPE_USER_STOP     = 7;
+    const int8_t TYPE_MAX_VALID     = 8; //and should be less than this... if you need to add a type, change this value
+
+  //fill in a field with these if you want to use the previous or the default value
+    const double USE_PREVIOUS =200000.11; //hopefully we'll never want to use this in a valid manner :-)
+    const double USE_DEFAULT  =100000.11; //hopefully we'll never want to use this in a valid manner :-)
+
+    //valid senders
+    const int8_t     SENDER_YOUR_MOM        = -1;
+    const int8_t     SENDER_WAYPOINT_TOOL   = 1;
+    const int8_t     SENDER_VIEWER          = 2;
+    const int8_t     SENDER_NAVIGATOR       = 3;
+    const int8_t     SENDER_MISSION_PLANNER = 4;
+    const int8_t     SENDER_USAR            = 5;
+    const int8_t     SENDER_MAP3D           = 6;
+    const int8_t     SENDER_MAX_VALID       = 7;
+
+}

@@ -1,0 +1,11 @@
+package ripl;
+
+struct navigator_point_t
+{
+	double  x;
+	double  y;
+	double  z;
+	double  yaw;
+	double  pitch;
+	double  roll;
+}
