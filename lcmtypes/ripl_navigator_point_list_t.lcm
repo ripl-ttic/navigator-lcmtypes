@@ -1,0 +1,9 @@
+package ripl;
+
+struct point_list_t
+{
+	int64_t utime;
+
+	int32_t num_points;
+	navigator_point_t points[num_points];
+}
