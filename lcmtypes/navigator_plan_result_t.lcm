@@ -1,9 +1,9 @@
 package navigator;
 
-struct navigator_plan_result_t
+struct plan_result_t
 {
 	int64_t utime;
-	navigator_goal_msg_t navgoal_msg;
+	goal_msg_t navgoal_msg;
 	point_list_t plan;
 	int8_t plan_result;
 

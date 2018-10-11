@@ -1,6 +1,6 @@
 package navigator;
 
-struct navigator_point_t
+struct point_t
 {
 	double  x;
 	double  y;

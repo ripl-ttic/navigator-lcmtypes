@@ -1,6 +1,6 @@
 package navigator;
 
-struct navigator_status_t
+struct status_t
 {
     int64_t  utime;
     int32_t goal_reached;    

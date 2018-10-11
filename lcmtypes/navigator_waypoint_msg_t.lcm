@@ -5,8 +5,8 @@ struct waypoint_msg_t
 
     int64_t utime;
 
-    navigator_point_t pos;
-    navigator_point_t vel;
+    point_t pos;
+    point_t vel;
     int8_t waypt_type;
     int8_t sender;
     int32_t nonce;

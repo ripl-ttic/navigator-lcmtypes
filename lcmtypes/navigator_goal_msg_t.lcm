@@ -1,10 +1,10 @@
 package navigator;
 
-struct navigator_goal_msg_t
+struct goal_msg_t
 {
 	int64_t utime;
 
-	navigator_point_t goal; //the actual desired goal in world coordinates
+	point_t goal; //the actual desired goal in world coordinates
 	
 	double velocity; //nominal desired speed
 	

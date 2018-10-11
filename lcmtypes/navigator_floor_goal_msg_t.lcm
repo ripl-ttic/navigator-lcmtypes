@@ -1,7 +1,7 @@
 package navigator;
 
-struct navigator_floor_goal_msg_t
+struct floor_goal_msg_t
 {
-	navigator_goal_msg_t goal_msg;
+	goal_msg_t goal_msg;
 	int32_t floor_no;	
 }

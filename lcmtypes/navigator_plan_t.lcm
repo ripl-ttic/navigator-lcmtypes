@@ -1,6 +1,6 @@
 package navigator;
 
-struct navigator_plan_t {
+struct plan_t {
     int64_t utime;
 
     int32_t num_waypoints;
