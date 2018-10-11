@@ -1,4 +1,4 @@
-package ripl;
+package navigator;
 
 struct waypoint_id_t
 {

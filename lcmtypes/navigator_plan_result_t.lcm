@@ -1,4 +1,4 @@
-package ripl;
+package navigator;
 
 struct navigator_plan_result_t
 {

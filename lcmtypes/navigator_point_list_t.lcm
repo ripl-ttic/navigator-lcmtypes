@@ -1,4 +1,4 @@
-package ripl;
+package navigator;
 
 struct point_list_t
 {
